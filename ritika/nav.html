@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="Home.css">
+    <script src="wrapper.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Photos/logo.png" alt="">
+        <div class="hambuger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Logn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        hambuger = document.querySelector(".hambuger");
+        hambuger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+         <br>
+        <hr>
+        <br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Photos/ritika1.jpg" alt="" style="width: 100%;">
+                <div class="text" align="left">
+                    <h1>Restoration is at Our Heart</h1>
+                    <p>With more than 4000 diverse products stemming from a range of design influences, create
+                        a whole-of-home look with our door levers, knobs, pulls, knockers, locks, latches, hinges,
+                        window fittings, bolts, home fixture, light switches, cabinetware and more.</p>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="Photos/ritika2.jpg" alt="" style="width: 100%;">
+                <div class="text">
+                    <h1>Extensive Product Range.</h1>
+                    <p>With more than 4000 diverse products stemming from a range of design influences, create a
+                        whole-of-home look with our door levers,
+                        knobs, pulls, knockers, locks, latches, hinges, window fittings, bolts, home fixture, light
+                        switches, cabinetware and more.</p>
+                </div>
+            </div>
+            <div class="mySlides fade">=
+                <img src="Photos/ritika3.jpg" alt="" style="width: 100%;">
+                <div class="text">
+                    <h1>Extensive Product Range.</h1>
+                    <p>With more than 4000 diverse products stemming from a range of design influences, create a
+                        whole-of-home look with our
+                        door levers, knobs, pulls, knockers, locks, latches, hinges, window fittings, bolts, home
+                        fixture, light switches, cabinetware and more.</p>
+                </div>
+            </div>
+
+            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+        </div>
+
+        <br>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+            <script src="script.js"></script>
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <h1>Our Range:-</h1>
+    <hr>
+    <br>
+
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+            <marquee behavior="" direction="">
+            <img src="Photos/cabinet.jpg" alt="img" draggable="false">
+            <img src="Photos/door.jpg" alt="img" draggable="false">
+            <img src="Photos/home.jpg" alt="img" draggable="false">
+            <img src="Photos/light.jpg" alt="img" draggable="false">
+            <img src="Photos/lock.jpg" alt="img" draggable="false">
+            <img src="Photos/window.jpg" alt="img" draggable="false">
+        </marquee>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div><br>
+
+    <!-- Product -->
+    <br><br>
+    <h1>Products:-</h1>
+    <hr>
+    <div class="product">
+        <div class="box-container">
+            <img src="Photos/knoob.jpg" alt="">
+            <div class="box">
+                <h4>Large Milled Edged Mortice Knob – Round Rose</h4>
+            </div>
+        </div>
+        <div class="box-container">
+            <img src="Photos/pull handle.jpg" alt="">
+            <div class="box">
+                <h4>Standard Pull Handle – L100xP26mm</h4>
+            </div>
+        </div>
+        <div class="box-container">
+            <img src="Photos/long handle.jpg" alt="">
+            <div class="box">
+                <h4>Reims Lever – Long Backplate</h4>
+            </div>
+        </div>
+        <div class="box-container">
+            <img src="Photos/curtain.jpg" alt="">
+            <div class="box">
+                <h4>Standard Pull Handle – L100xP26mm</h4>
+            </div>
+        </div>
+    </div>
+
+    <h1>Catalogue:-</h1>
+    <hr>
+
+
+    <div class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d623.5203803180078!2d78.07759147588428!3d27.866234767598417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a352bd95153d%3A0x8d764b7f61fd2f8d!2sRitika%20Industries!5e0!3m2!1sen!2sin!4v1707133636187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>

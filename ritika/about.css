@@ -1,0 +1,12 @@
+.aboutarea {
+    border: 1px solid gray;
+    padding: 20px;
+}
+.aboutarea h1{
+    text-decoration: underline;
+}
+.aboutarea p {
+    font-style: italic;
+    text-transform: capitalize;
+}
+

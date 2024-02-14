@@ -1,0 +1,130 @@
+*{
+   
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fefefe;
+}
+header img{
+    height: 80px;
+    mix-blend-mode:color-burn;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#dbd6d1 ;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.hambuger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-bar ul li a.active{
+    color: #11101b;
+    background: #fefefe;
+}
+/* sub menu bar */
+ #nav li ul.dropdown li {
+    display: block;
+ }
+ #nav li ul.dropdown{
+ width: 200px;
+ background: #dbd6d1;
+ position: absolute;
+ z-index: 9999;
+ display: none;
+}
+ul li a:hover{
+    background: #11101b;
+}
+#nav li:hover ul.dropdown{
+    display: block;
+}
+@media (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:800px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media (max-width:800px){
+    .hambuger{
+        display: block;
+        cursor: pointer;
+    }
+    .hambuger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #dbd6d1;
+        transition: 5.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: auto;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s; 
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+        transition: 1.5s ;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+    /* sub menu bar */
+    /* #nav li:hover ul.dropdown {
+        height: auto;
+        display: block;
+       
+     } */
+     #nav li ul.dropdown li {
+        display: block;
+        margin: 0;
+     }
+     #nav li ul.dropdown{
+     width: 200px;
+     background: #767471;
+     position: relative;
+     display: none;
+    }
+}
